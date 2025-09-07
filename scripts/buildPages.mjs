@@ -259,8 +259,8 @@ for (const lang of langs) {
 
   urlMaps[lang] = {
     "/simulator": "/simulator/" + (lang === 'en' ? '' : '?' + lang),
-    "/phydemo": "https://phydemo.app/",
-    "/email": "mailto:ray-optics@phydemo.app",
+    "/phydemo": "lalit-m.webflow.io",
+    "/email": "mailto:lalitmanjunatha2607@gmail.com",
     "/github": "https://github.com/ricktu288/ray-optics",
     "/github/issues": "https://github.com/ricktu288/ray-optics/issues",
     "/github/discussions": "https://github.com/ricktu288/ray-optics/discussions",
@@ -409,8 +409,8 @@ for (const lang of homeLangs) {
       html = html.replace(/<a href="/g, '<a target="_blank" href="');
     }
 
-    // If the link is to ray-optics@phydemo.app, prevent it from wrapping.
-    html = html.replace(/href="mailto:ray-optics@phydemo.app"/g, 'href="mailto:ray-optics@phydemo.app" style="white-space: nowrap;"');
+    // If the link is to lalitmanjunatha2607@gmail.com, prevent it from wrapping.
+    html = html.replace(/href="mailto:lalitmanjunatha2607@gmail.com"/g, 'href="mailto:lalitmanjunatha2607@gmail.com" style="white-space: nowrap;"');
 
     return new Handlebars.SafeString(html);
   });
